@@ -215,6 +215,7 @@ var BCLS = (function(window, document) {
           formattedDate;
         // Loop over all elements in single player's last_viewed array
         for (var j = 0; j < lastViewedLength; j++) {
+          formattedDate = lastViewedAra[j].date;
           formattedDate = moment(formattedDate).format("DD MMM YY");
           var myLI =
             "<li> Count: " +
